@@ -5,6 +5,7 @@ import "./Welcome.css";
 
 
 import Va2 from "../img/Va2.svg";
+import Valo from "../img/valo.png";
 
 const Welcome = () => {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -22,7 +23,7 @@ const Welcome = () => {
           </span>
         </button>
       </div>
-      <img src={Va2} alt="Início do Quiz" />
+      <img src={Valo} alt="Início do Quiz" />
     </div>
   );
 };

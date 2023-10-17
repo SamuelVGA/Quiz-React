@@ -28,7 +28,7 @@ const data = [
       {
         question: "Qual prop é passada automaticamente para qualquer componente que esteja dentro de um <Route> do react-router?",
         options: ["pathProp", "location", "routeDetails", "navigation"],
-        answer: "Para alimentar os recursos da interface do usuário do Facebook",
+        answer: "location",
       },
     ],
   },
