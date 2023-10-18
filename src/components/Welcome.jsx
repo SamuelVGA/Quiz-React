@@ -4,7 +4,6 @@ import { QuizContext } from "../context/quiz";
 import "./Welcome.css";
 
 
-import Va2 from "../img/Va2.svg";
 import Valo from "../img/valo.png";
 
 const Welcome = () => {
