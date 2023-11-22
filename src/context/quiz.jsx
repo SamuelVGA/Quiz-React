@@ -1,6 +1,7 @@
 import { createContext, useReducer } from "react";
 import questions from "../data/questions_complete";
 
+
 const STAGES = ["Start", "Category", "Playing", "End"];
 
 const initialState = {
@@ -24,17 +25,9 @@ const quizReducer = (state, action) => {
       };
 
     case "START_GAME":
-      let quizQuestions = null;
-
-      state.questions.forEach((question) => {
-        if (question.category === action.payload) {
-          quizQuestions = question.questions;
-        }
-      });
-
       return {
         ...state,
-        questions: quizQuestions,
+        questions: action.data,
         gameStage: STAGES[2],
       };
 
